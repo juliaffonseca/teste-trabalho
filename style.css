@@ -1,0 +1,158 @@
+/* Reset básico de margem e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Azul claro */
+    color: #333; /* Cor do texto */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ffb6c1; /* Rosa claro */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #b0e57c; /* Verde claro */
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #87ceeb; /* Azul claro */
+    border-radius: 5px;
+}
+
+/* Estilo das seções */
+section {
+    margin-bottom: 40px;
+}
+
+/* Títulos das seções */
+section h2 {
+    font-size: 2em;
+    color: #ffb6c1; /* Rosa claro para títulos */
+    margin-bottom: 10px;
+}
+
+/* Estilo de links */
+a {
+    color: #87ceeb; /* Azul claro */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do conteúdo */
+.content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+    margin-bottom: 15px;
+}
+
+/* Formulário de contato */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #ffb6c1; /* Rosa claro para o botão */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #87ceeb; /* Azul claro para o efeito de hover */
+}
+
+/* Rodapé */
+footer {
+    background-color: #b0e57c; /* Verde claro para o rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Responsividade para dispositivos móveis */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    form input,
+    form textarea {
+        font-size: 1em;
+    }
+
+    form button {
+        font-size: 1em;
+    }
+}
